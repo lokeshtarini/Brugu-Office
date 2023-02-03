@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<body style="padding: 100px; background-color: rgb(82, 100, 49);">
+
+    <h1 style="margin-left: 350px;">Instagram</h1>
+    <div style="margin-left: 350px;">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="background"
+            width="200px" height="200px" />
+    </div>
+    <h2 style="margin-left: 350px;">Instagram</h2>
+    <p> Stories are a quick, easy way to share moments and experiences.
+        Use text, music, stickers and GIFs to bring your story to life.We put people first, and value craft and simplicity in our work. Our teams inspire creativity around the world, helping over 1 billion people create and share. Join us!
+        <a href="https://www.instagram.com/?__coig_restricted=1" ></p>
+    <div style="margin-left: 350px;">
+        <img src="htt//images.unsplash.com/photo-1533450718592-29d45635f0a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8anBnfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+            width="200px" height="200px" alt="background" />
+    </div>
+    <div style="margin-left: 350px;">
+        <ol>
+            <li style="color: rgb(12, 12, 12);">User Name</li>
+            <li style="color: rgb(87, 67, 87);">password</li>
+            <li style="color: rgb(119, 23, 23);">Forgot Password</li>
+        </ol>
+        <ul>
+            <li style="color:rgb(34, 20, 116);">User Name</li>
+            <li style="color: rgb(11, 12, 11);">Password</li>
+            <li style="color: rgb(231, 198, 12);">Forgot password</li>
+        </ul>
+    </div>
+    <div style="margin-left: 350px;">
+       <a href="" download="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"> <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="200px" width="200px"
+        alt="background" /></a>
+    </div>
+    <div>
+        <p> On <b>5, 2010,</b> Systrom closed a $500,000 seed funding round with <i>Baseline Ventures and Andreessen Horowitz</i>  while working on Burbn.<s>Josh Riedel</s> joined the company in October as Community Manager, Shayne Sweeney joined in November as an engineer, and Jessica Zollman joined as a Community Evangelist in August 2011.</p>
+    </div>
+    <div style="margin-left: 350px;">
+
+
+        <h3>Enter your Details</h3>
+        <form>
+            <div>
+                <input type="radio" name="one" value="male" onclick="asd(event)" />MALE
+                <input type="radio" name="one" value="female" onclick="asd(event)" />FEMALE
+                <input type="radio" name="one" value="others" onclick="asd(event)" />OTHERS
+            </div><br />
+            <div>
+                <input type="checkbox" value="Telugu" onclick="cvb(event)" /> Tekugu <br />
+                <input type="checkbox" value="english" onclick="cvb(event)" /> English <br />
+                <input type="checkbox" value=" Hindi" onclick="cvb(event)" /> Hindi
+
+            </div><br />
+            <div>
+                <label for="html">NAME:</label>
+                <input type="text" maxlength="30" placeholder="text" id="nam"><br /><br />
+                <label for="html">AGE:</label>
+                <input type="number" max="100" min="-10" placeholder="number" id="num"><br /><br />
+                <label for="html">EMAIL:</label>
+                <input type="email" placeholder="email" id="mail"><br /><br />
+                <label for="html">PASSWORD</label>
+                <input type="password" minlength="12" placeholder="password" id="pass"><br /><br />
+                <label for="html">DATE</label>
+                <input type="date" placeholder="date" min="2023-01-20" id="da"><br /><br />
+            </div>
+        </form>
+        <button onclick="na()">Submit</button>
+    </div>
+</body>
+<script>
+    var br=""
+    var ar = {
+        c: "",
+        v: "",
+        k: ""
+
+    };
+    function cvb(e) {
+        if (e.target.value === "telugu") {
+            ar.c = e.target.value
+        }
+        else if (e.target.value === "english") {
+            ar.v = e.target.value
+        }
+        else {
+            ar.k = e.target.value
+        }
+    }
+    function asd(e) {
+        br = e.target.value
+
+    }
+    function na() {
+       
+        date = document.getElementById("da").value
+        password = document.getElementById("pass").value
+        email = document.getElementById("mail").value
+        name = document.getElementById("nam").value
+        number = document.getElementById("num").value
+        console.log(br)
+        console.log("lag :"  +ar.c+ar.v+ar.k)
+        console.log(name)
+        console.log(number)
+        console.log(email)
+        console.log(password)
+        console.log(date)
+
+    }
+</script>
+
+</html>

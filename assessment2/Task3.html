@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        .main{
+            display: grid;
+            grid-area: auto;
+            gap: 5px;
+            height: 100%;
+        }
+        .header{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-column:1/13 ;
+        }
+        .side{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-area:2/1/10/4 ;
+        }
+        .nav{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-area:2/4/4/11 ;
+        }
+        .man{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-area:4/4/10/11 ;
+        }
+        .ads{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-area:2/11/10/13 ;
+        }
+        .footer{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-column: 1/13 ;
+        }
+            
+    @media ( max-width:900px ){
+        .header{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-column:1/13 ;
+        }
+        .nav{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-column: 1/13;
+        }
+        .side{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-area:4/1/9/3;
+        }
+        .man{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-area:4/3/9/13 ;
+        }
+        .ads{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-area:9/1/10/3 ;
+        }
+        .footer{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-area:9/3/10/13 ;
+        }
+
+    }  
+    @media ( max-width:600px) {
+            .header{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-column:1/13 ;
+        }
+        .side{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-area:10/1/11/13 ;
+        }
+        .nav{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-column:1/13 ;
+        }
+        .man{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-area:4/1/10/13 ;
+        }
+        .ads{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-area:11/1/12/13 ;
+        }
+        .footer{
+            border: 5px solid red ;
+            border-radius: 20px;
+            grid-area:12/1/13/13 ;
+        }
+    }
+
+    </style>
+    <body>
+        <div class="main">
+            <div class="header">
+                header
+            </div>
+            <div class="side">sidebar</div>
+            <div class="nav">
+                navigation
+            </div>
+            <div class="man">
+                main
+            </div>
+             <div class="ads">
+              ads
+             </div>
+             <div class="footer">
+                footer
+             </div>
+        </div>
+
+    </body>
+</html>
